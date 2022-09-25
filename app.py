@@ -25,7 +25,7 @@ def Patients():
     conn = get_db_connection()
     patientList = conn.execute('SELECT * FROM patient_table').fetchall()
     conn.close()
-    print('patientListSql:', patientList)
+    print('patientList:', patientList)
     return render_template('index.html', listPatients=patientList)
 
 if __name__ == '__main__':
