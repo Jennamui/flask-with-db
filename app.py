@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 def get_db_connection():
-    dir = os.getcwd() + '/patients.db'
+    dir = os.getcwd() + '/patients1.db'
     print('dir:', dir)
     conn = sqlite3.connect(dir) 
     conn.row_factory = sqlite3.Row 
