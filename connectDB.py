@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 def get_db_connection():
-    conn = sqlite3.connect('patients')
+    conn = sqlite3.connect('patients1.db')
     conn.row_factory = sqlite3.Row
     return conn
 
